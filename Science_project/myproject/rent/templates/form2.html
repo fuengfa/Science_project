@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta charset="utf-8" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/static/theme.css" type="text/css"> </head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//netsh.pp.ua/upwork-demo/1/js/typeahead.js"></script>
+
+<body s class="">
+
+  <div class="text-center bg-primary p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-white ">แบบฟอร์มรายละเอียดเบิกค่าตรวจข้อสอบ<br>คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#" class="active nav-link"><i class=""></i>&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">View</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Edit</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-1 offset-md-5">
+          <button type="submit" class="btn btn-warning">Log out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="px-3">
+    <div class="container">
+      <div class="card">
+        <div class="card-body px-5">
+          <div class="row border-primary">
+            <div class="col-md-2">
+              <form class="">
+                <div class="form-group"> <label for="exampleInputEmail1">รหัสวิชา</label>
+                  <input type="email" class="form-control border border-info" placeholder="" id="exampleInputEmail1" aria-describedby="emailHelp"> </div>
+              </form>
+            </div>
+          </div>
+          <div class="row border-primary">
+            <div class="col-md-2">
+              <form class="">
+                <div class="form-group"> <label for="exampleInputEmail1">ประเภทข้อสอบ</label> <select name="typeEx">
+   											<option value="volvo">อัตนัย</option>
+    										<option value="saab">ปรนัย</option>
+    										<option value="mercedes">สัมภาษณ์+ปฏิบัติ</option>
+  											</select> </div>
+              </form>
+            </div>
+          </div>
+          <div class="row border-primary">
+            <div class="col-md-2">
+              <form class="">
+                <div class="form-group"> <label for="exampleInputEmail1">ประเภทการสอน</label> <select name = "typeTea">               
+                     <option value="เป็นวิชาสอนท่านเดียว">เป็นวิชาสอนท่านเดียว</option>
+                      <option value="เป็นวิชาสอนร่วม">เป็นวิชาสอนร่วม</option>
+                    </select> </div>
+              </form>
+            </div>
+          </div><label for="exampleInputEmail1"></label>
+          <div class="row">
+            <div class="col-md-12 ">
+              <form name="frmMain" method="post">
+                <table class="table" id="tbExp" action="myFunction()">
+                  <tbody>
+                    <tr>
+                      <th class="text-center">
+                        <br>ลำดับที่</th>
+                      <th class="text-center">
+                        <br>จำนวนนักศึกษา
+                        <br>&nbsp;ที่เข้าสอบ(คน)</th>
+                      <th class="text-center" text-align = "center">
+                        <br>ชื่อ-นามสกุล ผู้ตรวจข้อสอบ</th>
+                      <th class="text-center">สัดส่วนการตรวจข้อสอบ<br>ของอาจารย์แต่ละท่าน<br>ใน 1 วิชา(คิดเป็น %)</th>
+                    </tr>
+
+                    <tr>
+                      <td>               
+                        <input class="table"  id="TotalStu" value="1" >
+                      </td>
+
+                      <td><input class="table" id="TotalStu" >
+                      </td>
+
+                      <td align-text = "text-center" >
+                        <div class="content">
+
+                        <form>
+                        
+                        <input type="text" name="city" size="30" class="city" placeholder="ชื่อ-นามสกุล">
+                        </form>
+                        </div>
+                      </td>
+                      <td>              
+                      <input class="table" size = "4" id="TotalStu" >
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td>               
+                        <input class="table"  id="TotalStu" value="2" >
+                      </td>
+
+                      <td><input class="table" id="TotalStu" >
+                      </td>
+
+                      <td align-text = "text-center" >
+                        <select name = "Aname">               
+                        <option size = "80" value="ชื่อ" class= "text-center">ชื่อ - นามสกุล</option>
+                        <option size = "" value="ชื่อ" class = "text-center">ผศ.ดร.วิโชชัยเรือง กิจลักษณะดี              </option>
+                        <option size = "" value="ชื่อ" class = "text-center">ผศ.ดร.วิโชชัยเรือง กิจลักษณะดีมากกว่ามากมาย</option>
+                      </td>
+                      <td>              
+                      <input class="table" size = "4" id="TotalStu" >
+                      </td>
+                    </tr>
+                      
+                    <tr>
+                      <td>               
+                        <input class="table"  id="TotalStu" value="3" >
+                      </td>
+
+                      <td><input class="table" id="TotalStu" >
+                      </td>
+
+                      <td align-text = "text-center" >
+                        <select name = "Aname">               
+                        <option size = "80" value="ชื่อ" class= "text-center">ชื่อ - นามสกุล</option>
+                        <option size = "" value="ชื่อ" class = "text-center">ผศ.ดร.วิโชชัยเรือง กิจลักษณะดี              </option>
+                        <option size = "" value="ชื่อ" class = "text-center">ผศ.ดร.วิโชชัยเรือง กิจลักษณะดีมากกว่ามากมาย</option>
+                      </td>
+                      <td>              
+                      <input class="table" size = "4" id="TotalStu" >
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                <div class="col-md-12">
+                  <input name="hdnMaxLine" type="hidden" value="0"> </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md col-md-6">
+                  
+                </div>
+                <div class="col-md col-md-6">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+              </div>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-6 py-3">
+              <a class="btn btn-block btn-lg text-white btn-success" href="#"><b class="text-white">บันทึก</b></a>
+            </div>
+            <div class="col-md-6 py-3">
+              <a class="btn btn-lg btn-block btn-warning" href="#"><b class="text-white">ยกเลิก</b></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <script language="javascript">
+        function CreateNewRow()
+            	{
+            		var intLine = parseInt(document.frmMain.hdnMaxLine.value);
+            		intLine++;
+            			
+            		var theTable = document.all.tbExp
+            		var newRow = theTable.insertRow(theTable.rows.length)
+            		newRow.id = newRow.uniqueID
+            		
+            		var item1 = 1
+            		var newCell
+            		
+            		//*** Column 1 ***//
+            		newCell = newRow.insertCell(0)
+            		newCell.id = newCell.uniqueID
+            		newCell.setAttribute("", "");
+            		newCell.innerHTML = "<center><INPUT TYPE=\"TEXT\" SIZE=\"4\" NAME=\"Column1_"+intLine+"\" VALUE=\"" + intLine+ "\"></center>"
+            
+            		//*** Column 2 ***//
+            		newCell = newRow.insertCell(1)
+            		newCell.id = newCell.uniqueID
+            		newCell.setAttribute("className", "css-name");
+            		newCell.innerHTML = "<left><INPUT TYPE=\"TEXT\" SIZE=\"8\" NAME=\"Column2_"+intLine+"\" VALUE=\"      \"></center>"		
+            		
+            		//*** Column 3 ***//
+            		newCell = newRow.insertCell(2)
+            		newCell.id = newCell.uniqueID
+            		newCell.setAttribute("className", "Table");
+            		newCell.innerHTML = "<center><INPUT TYPE=\"TEXT\" SIZE=\"26\" NAME=\"Column3_"+intLine+"\" VALUE=\"\"></center>"				
+            		
+                newCell = newRow.insertCell(3)
+            		newCell.id = newCell.uniqueID
+            		newCell.setAttribute("className", "Table");
+            		newCell.innerHTML = "<center><INPUT TYPE=\"TEXT\" SIZE=\"10\" NAME=\"Column3_"+intLine+"\" VALUE=\"\"></center>"
+            		
+            		document.frmMain.hdnMaxLine.value = intLine;
+                window.scrollBy(0, 70);
+            	}
+            	
+            	function RemoveRow()
+            	{
+            		intLine = parseInt(document.frmMain.hdnMaxLine.value);
+            		if(parseInt(intLine) > 0)
+            		{
+            				theTable = (document.all) ? document.all.tbExp : 
+            				document.getElementById("tbExp")
+            				theTableBody = theTable.tBodies[0];
+            				theTableBody.deleteRow(intLine);
+            				intLine--;
+            				document.frmMain.hdnMaxLine.value = intLine;
+                    
+            		}	
+            	}
+      </script>
+    </div>
+  </div>
+  
+</body>
+
+</html>
